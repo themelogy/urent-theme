@@ -1,0 +1,47 @@
+$theme-colors: (
+    yellow1: #ffea00,
+    blue1: #4488B5,
+
+    grey0: #6d7177,
+    grey1: #08203f,
+    grey2: #4b4e53,
+    grey3: #292D30,
+
+    red1: rgb(220,56,50),
+    orange1: #f15a29,
+    green1: #009245
+);
+$white: #fff;
+$gray : map_get($theme-colors, grey3);
+
+$default-theme-color: map_get($theme-colors, green1);
+$default-reverse-color: map_get($theme-colors, grey3);
+$default-txt-color: map_get($theme-colors, grey3);
+
+$header-bg-color: #ffffff;
+$breadcrumbs-bg-color: map_get($theme-colors, grey1);
+$breadcrumbs-txt-color: #fff;
+$breadcrumbs-link-color: #fff;;
+$breadcrumbs-link-active-color: $default-theme-color;
+
+$btn-bg-color             : $default-theme-color;
+$btn-border-color         : darken($btn-bg-color, 10%);
+$btn-txt-color            : #fff;
+$btn-hover-bg-color       : map_get($theme-colors, grey0);
+$btn-hover-txt-color      : #fff;
+$btn-border-hover-color   : darken($btn-hover-bg-color, 10%);
+
+$widget-title-bg-color    : $default-theme-color;
+$widget-title-txt-color   : #fff;
+
+$menu-link-color          : $breadcrumbs-bg-color;
+$menu-hover-color         : $default-theme-color;
+
+$footer-bg-color          : map_get($theme-colors, grey1);
+$footer-bottom-bg-color   : $footer-bg-color;
+$footer-bottom-txt-color  : lighten($footer-bottom-bg-color, 20%);
+$footer-txt-color         : #fff;
+$footer-link-color        : $footer-txt-color;
+$footer-link-hover-color  : $default-theme-color;
+$footer-link-icon-color   : $default-theme-color;
+$footer-font-size         : 12px;

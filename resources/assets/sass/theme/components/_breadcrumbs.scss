@@ -1,0 +1,62 @@
+
+/* 5.1 */
+/* Breadcrumbs
+/* ========================================================================== */
+.page-section.breadcrumbs {
+  background-color: $breadcrumbs-bg-color;
+  color: $breadcrumbs-txt-color;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 1;
+}
+.page-section.breadcrumbs .breadcrumb {
+  position: relative;
+  padding: 5px 0 0 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.page-section.breadcrumbs .breadcrumb a {
+  color: $breadcrumbs-link-color;
+}
+.page-section.breadcrumbs .breadcrumb a:hover {
+  border-bottom: solid 1px #14181c;
+}
+.page-section.breadcrumbs .breadcrumb li {
+  margin-bottom: 10px;
+}
+.page-section.breadcrumbs .breadcrumb > li + li:before {
+  content: '\f105 ';
+  font-family: 'FontAwesome';
+}
+.page-section.breadcrumbs .breadcrumb > .active {
+  color: $breadcrumbs-link-active-color;
+}
+.page-section.breadcrumbs .page-header {
+  padding: 0;
+  margin: 25px 0 0 0;
+  border: none;
+}
+.page-section.breadcrumbs .page-header h1,
+.page-section.breadcrumbs .page-header h1 small {
+  color: $breadcrumbs-txt-color;
+  text-transform: uppercase;
+}
+.page-section.breadcrumbs .page-header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+	.page-section.breadcrumbs .page-header h1 {
+	  margin: 0;
+	  padding: 30px 0 0 0;
+	  font-size: 50px;
+	  font-weight: 700;
+	}
+}

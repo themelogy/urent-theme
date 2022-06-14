@@ -1,0 +1,64 @@
+/* Swiper
+/* ========================================================================== */
+.swiper {
+  position: relative;
+}
+.swiper-container .swiper-slide img.img-responsive {
+  width: 100%;
+}
+.swiper-container .swiper-pagination {
+  position: relative;
+  margin-top: 10px;
+  bottom: auto;
+  left: auto;
+}
+.swiper-container .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border: solid 4px $default-theme-color;
+  background-color: transparent;
+  opacity: 1;
+}
+.swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $default-theme-color;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: -20px;
+  text-align: center;
+  background: none;
+  border: solid 2px darken(white, 20%);
+  border-radius: 40px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.swiper-button-prev .fa,
+.swiper-button-next .fa {
+  font-size: 25px;
+  font-weight: 900;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.swiper .swiper-button-prev {
+  left: -80px;
+}
+.swiper .swiper-button-next {
+  right: -80px;
+}
+@media (max-width: 991px) {
+  .swiper--offers-best .swiper-button-prev,
+  .swiper--offers-popular .swiper-button-prev,
+  .swiper--offers-economic .swiper-button-prev,
+  .swiper--offers-best .swiper-button-next,
+  .swiper--offers-popular .swiper-button-next,
+  .swiper--offers-economic .swiper-button-next {
+    display: none;
+  }
+}

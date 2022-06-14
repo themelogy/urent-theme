@@ -1,0 +1,71 @@
+$directions : (
+        top : top,
+        bot : bottom,
+        lft : left,
+        rgt : right
+);
+
+@for $i from 0 through 20 {
+  $i : $i * 5;
+  @each $direction-key, $direction-value in $directions {
+    .m-#{$direction-key}-#{$i} {
+      margin-#{$direction-value}: $i+px !important;;
+    }
+  }
+  @each $direction-key, $direction-value in $directions {
+    .p-#{$direction-key}-#{$i} {
+      padding-#{$direction-value}: $i+px !important;;
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  $i : $i * 5;
+  .margin-#{$i} {
+    margin: $i+px !important;;
+  }
+  .padding-#{$i} {
+    padding: $i+px !important;;
+  }
+}
+
+@for $i from 0 through 20 {
+  $i : $i * 5;
+  .m-top-bot-#{$i} {
+    margin: $i+px 0 !important;
+  }
+  .m-lft-rgt-#{$i} {
+    margin: 0 $i+px !important;;
+  }
+  .p-top-bot-#{$i} {
+    padding: $i+px 0 !important;;
+  }
+  .p-lft-rgt-#{$i} {
+    padding: 0 $i+px !important;;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.meta {
+  table td {
+    text-align: center;
+  }
+}
+
+.home.caption-title {
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    border-bottom: 20px solid transparent;
+    border-left: 350px solid rgba(darken($default-theme-color, 10%), 1);
+    top: 40px;
+    z-index: 100;
+    left:0;
+  }
+}

@@ -1,0 +1,64 @@
+/* 5.4 */
+/* Social icons line
+/* ========================================================================= */
+.social-icons {
+  margin: -15px 0 20px 0;
+  line-height: 30px;
+  display: block;
+}
+.social-icons li {
+  padding: 15px 10px 0 0;
+  float: left;
+}
+.social-icons a {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  background-color: transparent;
+  border: solid 1px #14181c;
+  margin: 0 2px;
+  font-size: 20px !important;
+  &.facebook {
+    background-color: #3c5b9b;
+    border-color: #3c5b9b;
+  }
+  &.twitter {
+    background-color: #2daae1;
+    border-color: #2daae1;
+  }
+  &.pinterest {
+    background-color: #cb2027;
+    border-color: #cb2027;
+  }
+  &.google {
+    background-color: #f63f29;
+    border-color: #f63f29;
+  }
+  &.instagram {
+    background-color: #fafafa;
+    color: black;
+    i {
+      color: black !important;
+    }
+  }
+  &.linkedin {
+    background-color: #2e97ff;
+    border-color: #1e62a7;
+  }
+  &.whatsapp {
+    background-color: rgb(9, 182, 0);
+    border-color: rgb(6, 131, 0);
+  }
+  i {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    margin: auto;
+  }
+}
+.social-icons a:hover {
+  background-color: #4d0000;
+  color: #ffffff;
+}

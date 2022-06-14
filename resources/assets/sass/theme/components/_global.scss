@@ -1,0 +1,68 @@
+/* 1.2 */
+/* Global properties (body, common classes, structure etc)
+/* ========================================================================== */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background: #fbfbfb;
+  color: #5c5c5c;
+  -webkit-font-kerning: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: visible !important;
+  position: relative;
+  overflow-x: hidden;
+}
+body.boxed {
+  background: #fbfbfb;
+}
+/* 1.3 */
+/* Layout
+/* ========================================================================== */
+html {
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+}
+.content-area {
+  position: relative;
+  z-index: 0;
+}
+.widget *:last-child {
+  margin-bottom: 0;
+}
+.content .widget + .widget,
+.sidebar .widget + .widget,
+.footer .widget + .widget {
+  margin-top: 30px;
+}
+.container.full-width {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+//.row {
+//  margin-top: -30px;
+//}
+//.row + .row {
+//  margin-top: 0;
+//}
+//.row div[class*="col-"],
+//.row aside[class*="col-"] {
+//  margin-top: 30px;
+//}
+.row div[class*="col-"]:after,
+.row aside[class*="col-"]:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.boxed .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}

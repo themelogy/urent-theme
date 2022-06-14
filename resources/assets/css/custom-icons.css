@@ -1,0 +1,83 @@
+@font-face {
+    font-family: FontCar;
+    src: url(../fonts/fontcar.eot);
+    src: url(../fonts/fontcar.eot?#iefix) format('embedded-opentype'), url(../fonts/fontcar.woff) format('woff'), url(../fonts/fontcar.ttf) format('truetype'), url(../fonts/fontcar.svg#customicons) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+[data-icon]:before {
+    font-family: FontCar;
+    content: attr(data-icon);
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-body, .icon-fuel, .icon-gear {
+    font-family: FontCar;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased
+}
+
+.icon-body:before {
+    content: "\0042"
+}
+
+.icon-fuel:before {
+    content: "\0046"
+}
+
+.icon-gear:before {
+    content: "\0047"
+}
+
+.glyph {
+    float: left;
+    text-align: center;
+    padding: .75em;
+    margin: .4em 1.5em .75em 0;
+    width: 6em;
+    text-shadow: none
+}
+
+.glyph_big {
+    font-size: 128px;
+    color: #59c5dc;
+    float: left;
+    margin-right: 20px
+}
+
+.glyph div {
+    padding-bottom: 10px
+}
+
+.glyph input {
+    font-family: consolas, monospace;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    box-shadow: 0 0 0 1px #ccc;
+    padding: .2em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.glyph .fs1 {
+    font-size: 2em
+}

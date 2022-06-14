@@ -1,0 +1,81 @@
+/* Image carousel / OwlCarousel
+/* ========================================================================== */
+.img-carousel.owl-theme .owl-controls {
+  margin: 0 !important;
+}
+@media (max-width: 639px) {
+  .img-carousel.owl-theme .owl-controls {
+    display: none;
+  }
+}
+.img-carousel.owl-theme .owl-controls .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  margin: -20px 0 0 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  font-size: 30px;
+  line-height: 30px;
+  border: solid 3px #14181c;
+  background: transparent;
+  color: #14181c;
+}
+.img-carousel.owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+  background: #14181c;
+  color: #ffffff;
+}
+.img-carousel.owl-theme .owl-controls .owl-nav .owl-prev {
+  left: 30px;
+}
+.img-carousel.owl-theme .owl-controls .owl-nav .owl-next {
+  right: 30px;
+}
+.img-carousel.owl-theme .owl-controls .owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.img-carousel.owl-theme .owl-controls .owl-dots .owl-dot span {
+  background-color: #a5abb7;
+}
+.img-carousel.owl-theme .owl-controls .owl-dots .owl-dot:hover span,
+.img-carousel.owl-theme .owl-controls .owl-dots .owl-dot.active span {
+  background-color: #14181c;
+}
+.car-big-card .img-carousel.owl-theme .owl-nav [class*=owl-] {
+  border: none;
+  line-height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+.car-big-card .img-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+.car-big-card .img-carousel.owl-theme .owl-nav .owl-prev {
+  left: 0;
+}
+.car-big-card .img-carousel.owl-theme .owl-nav .owl-next {
+  right: 0;
+}
+.car-big-card .img-carousel .btn-zoom {
+  position: absolute;
+  padding: 0;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.car-big-card .img-carousel .btn-zoom:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.car-big-card .img-carousel .btn-zoom .fa {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

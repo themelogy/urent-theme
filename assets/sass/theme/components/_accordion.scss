@@ -1,0 +1,73 @@
+/* 5.7 */
+/* Accordions / FAQ
+/* ========================================================================== */
+.accordion {
+  margin-bottom: 30px;
+}
+.accordion .panel {
+  border-radius: 0 !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: solid 1px #e9e9e9;
+}
+.accordion .panel-heading {
+  background: none;
+  padding-left: 20px;
+  padding-right: 0;
+  border-bottom: solid 1px #e9e9e9;
+  margin-bottom: -1px;
+}
+.accordion .panel-title {
+  font-size: 16px;
+  line-height: 22px;
+  color: #14181c;
+}
+.accordion .panel-title .collapsed {
+  font-weight: 400;
+}
+.accordion .panel-title a {
+  display: block;
+  color: #14181c;
+}
+.accordion .panel-title a:hover {
+  color: $default-theme-color;
+}
+.accordion .panel-title .overflowed {
+  margin-top: -2px;
+}
+.accordion .panel-title .overflowed img {
+  margin-left: 5px;
+}
+.accordion .panel-body {
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+.accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+}
+.accordion .dot {
+  display: inline-block;
+  float: right;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin-top: -10px;
+  text-align: center;
+  position: relative;
+  background: #e9e9e9;
+  color: #7f7f7f;
+  border-left: solid 1px #d3d3d3;
+}
+.accordion .dot:before {
+  content: '\f068';
+  font-family: 'FontAwesome';
+}
+.accordion .collapsed .dot:before {
+  content: '\f067';
+}
+.accordion .alert {
+  margin-bottom: 0;
+  color: #14181c;
+}

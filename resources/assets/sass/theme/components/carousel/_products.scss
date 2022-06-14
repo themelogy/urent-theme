@@ -1,0 +1,66 @@
+/* 4.4 */
+/* Products Carousel / OwlCarousel
+/* ========================================================================== */
+.featured-products-carousel .owl-theme .owl-controls {
+  margin: 0 !important;
+}
+@media (max-width: 639px) {
+  .featured-products-carousel .owl-theme .owl-controls {
+    display: none;
+  }
+}
+.featured-products-carousel .owl-theme .owl-controls .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  margin: -20px 0 0 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  font-size: 30px;
+  line-height: 30px;
+  border: solid 3px #a5abb7;
+  background: transparent;
+  color: #a5abb7;
+}
+.featured-products-carousel .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+  background: #14181c;
+  border-color: #14181c;
+  color: #ffffff;
+}
+.featured-products-carousel .owl-theme .owl-controls .owl-nav .owl-prev {
+  left: -70px;
+}
+.featured-products-carousel .owl-theme .owl-controls .owl-nav .owl-next {
+  right: -70px;
+}
+@media (max-width: 1300px) {
+  .featured-products-carousel .owl-theme .owl-controls .owl-nav .owl-prev {
+    left: 15px;
+  }
+  .featured-products-carousel .owl-theme .owl-controls .owl-nav .owl-next {
+    right: 15px;
+  }
+}
+.featured-products-carousel .owl-theme .owl-controls .owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.featured-products-carousel .owl-theme .owl-controls .owl-dots .owl-dot span {
+  background-color: #a5abb7;
+}
+.featured-products-carousel .owl-theme .owl-controls .owl-dots .owl-dot:hover span,
+.featured-products-carousel .owl-theme .owl-controls .owl-dots .owl-dot.active span {
+  background-color: #14181c;
+}
+.sidebar-products-carousel .owl-theme .owl-controls .owl-dots .owl-dot span {
+  background-color: #a5abb7;
+  border-radius: 0;
+  margin-left: 1px;
+  margin-right: 2px;
+}
+.sidebar-products-carousel .owl-theme .owl-controls .owl-dots .owl-dot:hover span,
+.sidebar-products-carousel .owl-theme .owl-controls .owl-dots .owl-dot.active span {
+  background-color: #14181c;
+}
